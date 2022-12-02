@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #5323e5;
+  --primary-color: #167cf8;
   --secondary-color:var #13a7dd;  
   --tertiary-color:var #e5c7a4;
   --accent-color:var #d77f13;
@@ -23,7 +23,7 @@ p {
 }
 
 .bg-dark {
-  background-color: #333;
+  background-color: rgb(153, 49, 164);
 }
 
 .bg-primary {
