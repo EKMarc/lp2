@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #3e3456;
+  --secondary-color:var #13a7dd;
+  --tertiary-color:var #e5c7a4;
+  --accent-color:var #d77f13;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+#hero {
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+}
