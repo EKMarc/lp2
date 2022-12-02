@@ -22,20 +22,33 @@
   </head>
   <body>
     
-    <header class="bg-primary"><h1 class="text-center">The Landing Page</h1></header>
+    <header class="bg-primary">
+      <h1 class="text-center">The Landing Page</h1>
+    </header>
 
     <main>
-      <!-- TODO: Use this 'div' for background image. -->
-       <div id="hero"> class="flex column flex items-center justify-center ">
-          <h2>Call to Action</h2>
+      <div id="hero"> class="flex"
+         <h2>Call to Action</h2>
           <p>Sign up for our newsletter!</p>
-          <form class="flex flex-column">
+          <form>
             <label for="email">Email</label>
             <input type="email" id="email" placeholder="Enter your email" />
             <button type="submit">Sign Up</button>
           </form>
-         </div>
-      <section>
+        <div id="hero" class="flex flex-column items-center justify-center">
+            <!-- TODO: Add a translucent white-ish background with padding around this content -->
+            <section class="bg-translucent-dark rounded">
+              <h2 class="text-center">Call to Action</h2>
+              <p>Sign up for our newsletter!</p>
+              <form class="flex flex-column gap items-center">
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" />
+                <button type="submit" class="button button-submit">Sign Up</button>
+              </form>
+            </section>
+          </div>
+
+          <section>
         <h2>Our Mission</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
@@ -45,6 +58,7 @@
         </p>
         <a href="http://classics.mit.edu/">Find out More</a>
       </section>
+
       <section>
         <h2>Our Team</h2>
         <p>
@@ -55,6 +69,7 @@
         </p>
         <a href="http://classics.mit.edu/">Find out More</a>
       </section>
+
       <section>
         <h2>Our Services</h2>
         <p>
@@ -85,13 +100,16 @@
           <option value="spider">Spider</option>
           <option value="goldfish">Goldfish</option>
         </select>
+
         <label for="interest"
           >What's your level of interest in buying stuff?</label
         >
         <input type="range" id="interest" name="interest" min="0" max="10" />
+        
         <button type="submit">Send</button>
       </form>
     </main>
+    
     <footer>
       <p>&copy; 2022 - The Landing Page</p>
     </footer>
